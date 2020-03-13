@@ -14,12 +14,12 @@ public class Divisao {
 		System.out.print("Digite o segundo valor[diferente de 0]: ");
 		valor2 = leia.nextFloat();
 		
-		//Verificação do segundo valor
+		//Verificacao do segundo valor
 		while(valor2 == 0) {
 			System.out.print("Segundo valor igual a 0.Por favor, digite novamente: ");
 			valor2 = leia.nextFloat();
 		}
 		
-		System.out.println("A divisão entre " + valor1 + " e " + valor2 + " é: " + (valor1/valor2));
+		System.out.println("A divisão entre " + valor1 + " e " + valor2 + " �: " + (valor1/valor2));
 	}
 }
