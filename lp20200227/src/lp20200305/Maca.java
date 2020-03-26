@@ -29,14 +29,19 @@ public class Maca {
 		
 		switch ((int)opc) {
 			case 1:
-				total = qtdMaca * 1.60;
+				
 				break;
 			case 2:
-				total = qtdMaca * 5.50;
+				if(qtdMaca < 12) {
+					total = qtdMaca * MACA_NORMAL;
+				}else {
+					total = qtdMaca * MACA_DUZIA;
+				}
 				break;
 			default:
 			break;
 		}
+		
 		/*if(qtdMaca < 12) {
 			total = qtdMaca * MACA_NORMAL;
 		}else {
